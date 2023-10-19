@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css 3 Animation-time-function </title>
+
+     <!--
+               linear,ease,
+               ease-in,ease-out,
+               ease-in-out
+              css 3 Animation
+
+     -->
+
+     <style>
+
+         .main{
+
+             width:700px;
+             height:150px;
+             border: 2px solid black;
+             margin:  50px auto;
+            position: relative;
+         }
+
+         .box{
+   
+                width:200px;
+                height:100px;
+                margin-top:20px;
+               background-color: red;
+              animation: box 4s 3 ;
+              position:absolute;
+     
+               /*
+
+              animation-timing-function: linear ;
+              animation-timing-function: ease-in;
+             
+              */
+         }
+
+
+         @keyframes box{
+
+             from{
+
+                    left: 0px;
+            
+
+             }
+                 
+             to{
+
+
+                 left: 500px;
+
+             }
+
+
+         }
+
+
+
+     </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="main">
+
+<div class="box">  <h2>Ease-in </h2> 
+
+
+
+</div>
+
+
+    </div>
+
+</body>
+</html>
